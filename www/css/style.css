@@ -1,0 +1,48 @@
+div {
+    overflow: hidden;
+}
+
+.facebook {
+  color: #FCFEFD;
+  font-size: 15px;
+  border: none;
+  background: #0066CC;
+  width: 86%;
+  margin-left: 7%;
+  margin-top: 25%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.funciona {
+  color: #FCFEFD;
+  font-size: 15px;
+  border: none;
+  background: #679A00;
+  width: 86%;
+  margin-left: 7%;
+  margin-top: 2%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.slogan {
+  color: #669700;
+  font-size: 200%;
+  margin-left: 15%;
+  margin-top: 2%;
+  line-height: 90%;
+}
+
+.fb {
+  padding: 1em;
+}
+
+.nombre {
+  margin-left: 50%;
+  font-size: 200%;
+  color: #FCFEFD;
+  margin-top: 75%;
+}

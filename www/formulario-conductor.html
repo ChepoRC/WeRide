@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/formulario-conductor.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+    <div class="bar header">
+      <button class="button nav icon navi-icon ion-navicon"></button>
+      <h1 class="title">NUEVO VIAJE</h1>
+    </div>
+    <ion-pane class="fondo">
+      <ion-content>
+        <div class="fondo-ruta">
+          <div class="ruta rounded">
+            <select>
+              <option></option>
+              <option>Ruta 1</option>
+              <option>Ruta 2</option>
+              <option>Ruta 3</option>
+            </select>
+          </div>
+        </div>
+        <div class="dias">
+          <label>
+            <input type="checkbox">
+            <span>L</span>
+          </label>
+          <label>
+            <input type="checkbox">
+            <span>M</span>
+          </label>
+          <label>
+            <input type="checkbox">
+            <span>M</span>
+          </label>
+          <label>
+            <input type="checkbox">
+            <span>J</span>
+          </label>
+          <label>
+            <input type="checkbox">
+            <span>V</span>
+          </label>
+          <label>
+            <input type="checkbox">
+            <span>S</span>
+          </label>
+          <label>
+            <input type="checkbox">
+            <span>D</span>
+          </label>
+        </div>
+        <div class="flipswitch">
+          <input type="checkbox" name="flipswitch" class="flipswitch-cb" id="fs" checked>
+          <label class="flipswitch-label" for="fs">
+            <div class="flipswitch-inner"></div>
+            <div class="flipswitch-switch"></div>
+          </label>
+        </div>
+        <div class="fondo-fecha">
+          <div class="fecha">
+            <label class="ida">Fecha ida</label>
+            <input type="date" class="calendario"></input>
+            <hr>
+            <label class="ida">Hora ida</label>
+            <input type="time" class="horario"></input>
+          </div>
+        </div>
+        <div class="imagenes">
+          <div class="imagen"></div>
+          <div class="imagen"></div>
+          <div class="imagen"></div>
+        </div>
+        <form>
+          <label class="formulario">Placas</label>
+          <input type="text"></input>
+          <br>
+          <label class="formulario">Marca</label>
+          <div class="marca rounded">
+            <select>
+              <option></option>
+              <option>Volkswagen</option>
+              <option>Honda</option>
+              <option>Nissan</option>
+            </select>
+          </div>
+          <br>
+          <label class="formulario">Modelo</label>
+          <input type="text"></input>
+          <br>
+          <label class="formulario">Color</label>
+          <div class="color">
+            <select>
+              <option></option>
+              <option>Rojo</option>
+              <option>Azul</option>
+              <option>Verde</option>
+            </select>
+          </div>
+          <div class="asientos">
+            <label>Asientos</label>
+            <input type="number" class="numero-asientos"></input>
+          </div>
+          <button class="publicar">PUBLICAR</button>
+        </form>
+
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+div {
+  overflow: hidden;
+}
+.fondo {
+  background: #FFFFFF;
+}
+.title {
+  color: #8DCD2F;
+}
+.nav {
+  border: none;
+}
+.navi-icon {
+  color: #8ECA28;
+}
+.subtitulo {
+  color: #FFFFFF;
+  font-size: 50%;
+}
+.subheader {
+  background: #5D5D5D;
+}
+.imagen {
+  background-image: url("/avatar.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  margin-top: 35%;
+  margin-left: 35%;
+  border-radius: 100%;
+  border: solid #8DCD2F;
+  border-width: 1px;
+}
+.mensaje {
+  color: #AEAEAE;
+  text-align: center;
+  font-size: 80%;
+  margin-bottom: 6%;
+  ;
+}
+label {
+  width: 17%;
+  text-align: center;
+  font-size: 90%;
+  margin-left: 5%;
+  margin-top: 3%;
+}
+label, input {
+  display: inline-block;
+}
+input[type=text] {
+  font-size: 13px;
+  width: 60%;
+  margin-top: -8%;
+  margin-left: 25%;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border-radius: 25px;
+  background: #EAEAE8;
+  text-align: center;
+}
+input[type=number] {
+  font-size: 13px;
+  width: 60%;
+  margin-top: -8%;
+  margin-left: 25%;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border-radius: 25px;
+  background: #EAEAE8;
+  text-align: center;
+}
+.actualizar {
+  color: #FCFEFD;
+  font-size: 15px;
+  border: none;
+  background: #90CB31;
+  width: 86%;
+  margin-left: 7%;
+  margin-top: 7%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

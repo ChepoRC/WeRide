@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({appId: '736105033198021', xfbml: true, version: 'v2.6'});
+        FB.getLoginStatus(function(response) {
+          if (response.status === 'connected') {
+            console.log('Logged in.');
+          } else {
+            FB.login();
+          }
+        });
+      };
+      (function(d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+          return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <script>
+      // Only works after `FB.init` is called
+      function myFacebookLogin() {
+        FB.login(function() {}, {scope: 'publish_actions'});
+      }
+    </script>
+
+    <ion-pane>
+      <ion-content>
+        <p class="nombre">WeRide</p>
+        <p class="slogan">
+          Súbete,
+          <br/>
+          vámonos juntos.</p>
+        <button class="facebook ion-social-facebook" onclick="myFacebookLogin">
+          <span class="fb">LOGIN CON FACEBOOK</span>
+        </button>
+        <button onclick="location.href='ingresarNumero.html'" class="funciona">
+          CÓMO FUNCIONA
+        </button>
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+div {
+    overflow: hidden;
+}
+
+.saludo {
+  color: #FCFEFD;
+  font-size: 45px;
+  margin-top: 35%;
+  text-align: center;
+}
+
+.mensaje {
+  color: #FCFEFD;
+  font-size: 15px;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.numero {
+  border: none;
+  font-size: 26px;
+  margin-left: 18%;
+  margin-top: 10%;
+  border-radius: 25px;
+  width: 65%;
+  background: #679A00;
+  text-align: center;
+  color: #FCFEFD;
+}
+
+.aviso {
+  color: #679A00;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10%;
+}
+
+.codigo {
+  color: #FCFEFD;
+  font-size: 15px;
+  border: none;
+  background: #F8AC00;
+  width: 86%;
+  margin-left: 7%;
+  margin-top: 15%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.funciona:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.pagina {
+  color: #86BE25;
+  margin-top: 8%;
+  margin-left: 85%;
+  font-size: 45px;
+}
+
+.pagination {
+    clear:both;
+    width:75px;
+    margin:11.2% 46% 0;
+    padding:0;
+}
+
+.pagination li {
+    list-style:none;
+    float:left;
+    margin:0 2px;
+}
+
+.pagination li a {
+    display:block;
+    width:7px;
+    height:7px;
+    text-indent:-10000px;
+    background: #FCFEFD;
+    border-radius: 10px;
+    margin-top: -40%;
+}
+
+.pagination li a.active {
+    width:12px;
+    height:12px;
+    border: solid #679A00;
+    border-width:2.5px;
+    background: #90CB31;
+}
